@@ -1,0 +1,22 @@
+npm install prisma --save-dev
+
+npx init
+
+
+
+* npx prinpx prisma db  push  --schema=prisma/schema-mongo1.prisma  // push db ขึ้นฐานข้อมูล  schema-mongo1.prisma ชื่อไฟล์
+
+* npx prinpx prisma generate --schema=prisma/schema-mongo1.prisma  // generate ไคเอน
+
+
+หากคุณต้องการดึงข้อมูล (pull) จากฐานข้อมูลใน Prisma, คุณสามารถใช้คำสั่ง prisma db pull 
+ซึ่งจะช่วยให้คุณดึงโครงสร้างฐานข้อมูลจากฐานข้อมูลที่มีอยู่และสร้างไฟล์ schema.prisma 
+ที่ตรงกับฐานข้อมูลของคุณ.
+
+
+ * npx prisma db pull
+
+สำหรับการ migrate แต่ mongo ใช้ไม่ได้
+ npx prisma migrate dev --name init --schema prisma/schema-mongo1.prisma
+
+
